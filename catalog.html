@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог — Mood Flowers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="img/logo.jpg" alt="Flowers Mood"><span>Flowers Mood</span></a>
+    <nav id="site-nav" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="catalog.html" aria-current="page">Каталог</a>
+      <a href="delivery.html">Доставка</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+    <div class="header-tools">
+      <a class="phone" href="tel:+375293757817">+375 29 375-78-17</a>
+      <button class="btn" type="button" onclick="openOrder()">Заказать</button>
+      <button class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section id="catalog">
+  <div class="wrap">
+    <h1 class="sec-t">Каталог букетов</h1>
+    <p class="sec-s">Актуальные букеты, цены указаны за готовую композицию</p>
+    <div class="toolbar">
+      <div class="filters" id="f">
+        <button class="on" type="button" data-f="all">Все</button>
+        <button type="button" data-f="lo">до 100 BYN</button>
+        <button type="button" data-f="mid">100–150 BYN</button>
+        <button type="button" data-f="hi">от 150 BYN</button>
+      </div>
+      <div class="filters" id="sort" aria-label="Сортировка">
+        <button type="button" data-s="asc">Сначала дешевле</button>
+        <button type="button" data-s="desc">Сначала дороже</button>
+      </div>
+    </div>
+    <div class="grid" id="grid"></div>
+    <p class="empty" id="empty">В этой категории букетов пока нет. Напишите нам, соберём под ваш бюджет.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo"><img src="img/logo.jpg" alt="Flowers Mood"><span>Flowers Mood</span></div>
+    <div class="cols">
+      <div>Instagram: <a href="https://www.instagram.com/mood_flowers_minsk/" target="_blank" rel="noopener">@mood_flowers_minsk</a><br><br><br>Самовывоз: Ольшевского, 13 5<br>ПН-СБ 9:00-21:00<br>ВС 10:00-21:00</div>
+      <div><a href="tel:+375293757817">+375 29 375-78-17</a><div class="ct"><a href="https://t.me/+375293757817" target="_blank">Telegram</a><a href="viber://chat?number=%2B375293757817">Viber</a><a href="https://wa.me/375293757817" target="_blank">WhatsApp</a></div></div>
+      <div><a href="tel:+375445940149">+375 44 594-01-49</a><div class="ct"><a href="https://t.me/+375445940149" target="_blank">Telegram</a><a href="viber://chat?number=%2B375445940149">Viber</a><a href="https://wa.me/375445940149" target="_blank">WhatsApp</a></div></div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="m"><div class="box"><button class="x" type="button" onclick="closeOrder()">×</button>
+<form id="form"><h3>Оформление заказа</h3>
+<label>Букет</label><input id="bq" required>
+<div class="row"><div><label>Дата</label><input type="date" id="dt" required></div><div><label>Время</label><select required><option>09:00–12:00</option><option>12:00–15:00</option><option>15:00–18:00</option><option>18:00–21:00</option></select></div></div>
+<label>Получение</label><div class="radio"><label><input type="radio" name="dl" value="d" checked> Доставка</label><label><input type="radio" name="dl" value="p"> Самовывоз</label></div>
+<div id="zone"><label>Зона доставки</label><select name="zone"><option value="in">В пределах МКАД</option><option value="out">За пределами МКАД</option></select></div><p class="note" id="pick" style="display:none;margin-top:8px">Самовывоз: Ольшевского, 13 5 · ПН-СБ 9:00-21:00, ВС 10:00-21:00</p>
+<div id="addr"><label>Адрес доставки</label><input placeholder="Улица, дом, квартира"></div>
+<div class="row"><div><label>Ваше имя</label><input required></div><div><label>Телефон</label><input type="tel" required placeholder="+375"></div></div>
+<label>Текст открытки</label><textarea rows="2" placeholder="Необязательно"></textarea>
+<div class="sum" id="sum"></div><button class="btn" style="width:100%;margin-top:18px">Отправить заказ</button></form>
+<div class="ok" id="ok"><div class="ic">✿</div><h3>Заказ принят, мы свяжемся с вами</h3><p class="note">Спасибо! Флорист уже видит ваш заказ.</p>
+<div class="tg">✈ Заказ мгновенно приходит в Telegram магазина (в макете симуляция, данные никуда не отправляются)</div>
+<button class="btn ghost" type="button" style="margin-top:16px" onclick="closeOrder()">Закрыть</button></div></div></div>
+<div class="mk">Макет</div>
+<script src="assets/site.js"></script>
+</body>
+</html>
