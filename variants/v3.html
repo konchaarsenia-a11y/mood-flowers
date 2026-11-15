@@ -1,0 +1,163 @@
+<!-- Вариант 3 главной Mood Flowers: редакционный минимализм — крупная типографика, полноширинное фото, лента как в Instagram и блок мессенджеров. -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mood Flowers — вариант 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/site.css">
+  <link rel="stylesheet" href="variants.css">
+</head>
+<body class="v3">
+<header>
+  <div class="wrap">
+    <a class="logo" href="../index.html"><img src="../img/logo.jpg" alt="Flowers Mood"><span>Flowers Mood</span></a>
+    <nav id="site-nav" aria-label="Основная навигация">
+      <a href="../index.html">Главная</a>
+      <a href="../catalog.html">Каталог</a>
+      <a href="../delivery.html">Доставка</a>
+      <a href="../contacts.html">Контакты</a>
+    </nav>
+    <div class="header-tools">
+      <a class="phone" href="tel:+375293757817">+375 29 375-78-17</a>
+      <button class="btn" type="button" onclick="openOrder()">Заказать</button>
+      <button class="nav-toggle" type="button" aria-label="Меню" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<div class="var-bar"><div class="wrap">Вариант 3 из 3 · <a href="index.html">Все варианты главной</a></div></div>
+
+<div class="v3-hero">
+  <div class="bg"><img src="../img/post3_osen.jpg" alt="Осенний букет"></div>
+  <div class="wrap">
+    <h1>Букеты с настроением и доставкой по Минску</h1>
+    <p>Собираем авторские букеты из свежих цветов к любому поводу: день рождения, свидание, «просто так». Выберите букет, дату и время, остальное сделаем мы.</p>
+    <div class="hero-actions">
+      <a class="btn" href="../catalog.html">Выбрать букет</a>
+      <a class="btn ghost" href="#wedding">Предзаказ</a>
+    </div>
+  </div>
+</div>
+<div class="v3-strip" aria-label="Фото букетов">
+  <div class="ph"><img src="../img/dm_photo_1.jpg" alt="Нежность в розовом"></div>
+  <div class="ph"><img src="../img/dm_photo_2.jpg" alt="Персиковое облако"></div>
+  <div class="ph"><img src="../img/dm_photo_5.jpg" alt="Классика страсти"></div>
+  <div class="ph"><img src="../img/dm_photo_7.jpg" alt="Французский шёлк"></div>
+  <div class="ph"><img src="../img/post6_svadebny_sezon.jpg" alt="Свадебный сезон"></div>
+  <div class="ph"><img src="../img/post4_noty_oseni.jpg" alt="Ноты осени"></div>
+  <div class="ph"><img src="../img/dm_photo_10.jpg" alt="Розовая мечта"></div>
+  <div class="ph"><img src="../img/post2_predzakaz.jpg" alt="Предзаказ"></div>
+</div>
+<section class="v3-write" id="contacts-write">
+  <div class="box-write">
+    <h2>Написать в Telegram, Viber или WhatsApp</h2>
+    <p>Ответим быстро и поможем выбрать букет, дату и способ получения</p>
+    <div class="ct">
+      <a href="https://t.me/+375293757817" target="_blank" rel="noopener">Telegram</a>
+      <a href="viber://chat?number=%2B375293757817">Viber</a>
+      <a href="https://wa.me/375293757817" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+    <div class="phones">
+      <a href="tel:+375293757817">+375 29 375-78-17</a>
+      <a href="tel:+375445940149">+375 44 594-01-49</a>
+    </div>
+  </div>
+</section>
+
+<section id="catalog">
+  <div class="wrap">
+    <h2 class="sec-t">Каталог букетов</h2>
+    <p class="sec-s">Актуальные букеты, цены указаны за готовую композицию</p>
+    <div class="grid grid-4">
+        <div class="card" data-p="130">
+          <div class="ph"><img loading="lazy" src="../img/dm_photo_1.jpg" alt="Нежность в розовом"></div>
+          <div class="b"><h3>Нежность в розовом</h3><div class="d">Пионовидные розы, гвоздики, хризантемы и эустома в розовой упаковке</div>
+          <div class="pr">130 BYN</div>
+          <button class="btn" type="button" data-order="Нежность в розовом — 130 BYN">Заказать</button></div>
+        </div>
+        <div class="card" data-p="70">
+          <div class="ph"><img loading="lazy" src="../img/dm_photo_2.jpg" alt="Персиковое облако"></div>
+          <div class="b"><h3>Персиковое облако</h3><div class="d">Белые хризантемы, персиковые гвоздики и альстромерии</div>
+          <div class="pr">70 BYN</div>
+          <button class="btn" type="button" data-order="Персиковое облако — 70 BYN">Заказать</button></div>
+        </div>
+        <div class="card" data-p="65">
+          <div class="ph"><img loading="lazy" src="../img/dm_photo_3.jpg" alt="Розовый зефир"></div>
+          <div class="b"><h3>Розовый зефир</h3><div class="d">Розовые гвоздики и белые хризантемы</div>
+          <div class="pr">65 BYN</div>
+          <button class="btn" type="button" data-order="Розовый зефир — 65 BYN">Заказать</button></div>
+        </div>
+        <div class="card" data-p="90">
+          <div class="ph"><img loading="lazy" src="../img/dm_photo_4.jpg" alt="Белая свежесть"></div>
+          <div class="b"><h3>Белая свежесть</h3><div class="d">Белые хризантемы-помпоны и альстромерии</div>
+          <div class="pr">90 BYN</div>
+          <button class="btn" type="button" data-order="Белая свежесть — 90 BYN">Заказать</button></div>
+        </div></div>
+    <p class="catalog-more"><a class="btn" href="../catalog.html">Смотреть весь каталог</a></p>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <h2 class="sec-t">Как заказать</h2>
+    <p class="sec-s">Три простых шага</p>
+    <div class="steps">
+      <div class="step"><b>01</b><h3>Выберите букет</h3><p>В каталоге или пришлите свою идею, соберём индивидуально.</p></div>
+      <div class="step"><b>02</b><h3>Укажите дату и время</h3><p>Доставка по адресу или самовывоз, добавим открытку с вашим текстом.</p></div>
+      <div class="step"><b>03</b><h3>Получите подтверждение</h3><p>Заказ сразу приходит флористу, мы свяжемся с вами для уточнения.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="wedding">
+  <div class="wrap">
+    <h2 class="sec-t">Свадебная флористика и предзаказ</h2>
+    <p class="sec-s">Букеты невесты, оформление и заранее забронированные букеты к праздникам</p>
+    <div class="feat">
+      <div class="it"><div class="ph"><img src="../img/post6_svadebny_sezon.jpg" alt="Свадебный сезон"></div><div class="t"><h3>Свадебный сезон</h3><p>Букет невесты, бутоньерки и флористика для вашего дня.</p><button class="btn" type="button" onclick="openOrder('Свадебная флористика (консультация)')">Обсудить свадьбу</button></div></div>
+      <div class="it"><div class="ph"><img src="../img/post2_predzakaz.jpg" alt="Предзаказ к празднику"></div><div class="t"><h3>Предзаказ к празднику</h3><p>Забронируйте букет заранее к важной дате, чтобы не переживать в последний момент.</p><button class="btn" type="button" onclick="openOrder('Предзаказ букета')">Оформить предзаказ</button></div></div>
+      <div class="it"><div class="ph"><img src="../img/post4_noty_oseni.jpg" alt="Ноты осени"></div><div class="t"><h3>Ноты осени</h3><p>Сезонные композиции и корзины в тёплых осенних оттенках.</p><button class="btn" type="button" onclick="openOrder('Осенняя композиция')">Заказать</button></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="deliv">
+      <h2 class="sec-t">Доставка</h2>
+      <p class="sec-s">Доставка 15 BYN в пределах МКАД. Осуществляется в удобное Вам время. Бесплатная доставка при заказе на сумму от 180 BYN.</p>
+      <p class="note">Самовывоз: Ольшевского, 13 5 · ПН-СБ 9:00-21:00, ВС 10:00-21:00</p>
+      <p class="catalog-more"><a class="btn" href="../delivery.html">Подробнее о доставке</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="logo"><img src="../img/logo.jpg" alt="Flowers Mood"><span>Flowers Mood</span></div>
+    <div class="cols">
+      <div>Instagram: <a href="https://www.instagram.com/mood_flowers_minsk/" target="_blank" rel="noopener">@mood_flowers_minsk</a><br><br><br>Самовывоз: Ольшевского, 13 5<br>ПН-СБ 9:00-21:00<br>ВС 10:00-21:00</div>
+      <div><a href="tel:+375293757817">+375 29 375-78-17</a><div class="ct"><a href="https://t.me/+375293757817" target="_blank">Telegram</a><a href="viber://chat?number=%2B375293757817">Viber</a><a href="https://wa.me/375293757817" target="_blank">WhatsApp</a></div></div>
+      <div><a href="tel:+375445940149">+375 44 594-01-49</a><div class="ct"><a href="https://t.me/+375445940149" target="_blank">Telegram</a><a href="viber://chat?number=%2B375445940149">Viber</a><a href="https://wa.me/375445940149" target="_blank">WhatsApp</a></div></div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal" id="m"><div class="box"><button class="x" type="button" onclick="closeOrder()">×</button>
+<form id="form"><h3>Оформление заказа</h3>
+<label>Букет</label><input id="bq" required>
+<div class="row"><div><label>Дата</label><input type="date" id="dt" required></div><div><label>Время</label><select required><option>09:00–12:00</option><option>12:00–15:00</option><option>15:00–18:00</option><option>18:00–21:00</option></select></div></div>
+<label>Получение</label><div class="radio"><label><input type="radio" name="dl" value="d" checked> Доставка</label><label><input type="radio" name="dl" value="p"> Самовывоз</label></div>
+<div id="zone"><label>Зона доставки</label><select name="zone"><option value="in">В пределах МКАД</option><option value="out">За пределами МКАД</option></select></div><p class="note" id="pick" style="display:none;margin-top:8px">Самовывоз: Ольшевского, 13 5 · ПН-СБ 9:00-21:00, ВС 10:00-21:00</p>
+<div id="addr"><label>Адрес доставки</label><input placeholder="Улица, дом, квартира"></div>
+<div class="row"><div><label>Ваше имя</label><input required></div><div><label>Телефон</label><input type="tel" required placeholder="+375"></div></div>
+<label>Текст открытки</label><textarea rows="2" placeholder="Необязательно"></textarea>
+<div class="sum" id="sum"></div><button class="btn" style="width:100%;margin-top:18px">Отправить заказ</button></form>
+<div class="ok" id="ok"><div class="ic">✿</div><h3>Заказ принят, мы свяжемся с вами</h3><p class="note">Спасибо! Флорист уже видит ваш заказ.</p>
+<div class="tg">✈ Заказ мгновенно приходит в Telegram магазина (в макете симуляция, данные никуда не отправляются)</div>
+<button class="btn ghost" type="button" style="margin-top:16px" onclick="closeOrder()">Закрыть</button></div></div></div>
+<div class="mk">Макет</div>
+<script src="../assets/site.js"></script>
+</body>
+</html>
